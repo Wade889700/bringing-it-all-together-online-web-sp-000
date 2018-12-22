@@ -74,10 +74,10 @@ class Dog
       self.new_from_db(row)
     end.first
 
-    def self.find_or_create_by(name:, breed:)
-      
-    end
+   def self.find_or_create_by(name:, breed:)
+    
    end
+   
 
 
 end
