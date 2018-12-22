@@ -74,7 +74,7 @@ class Dog
       self.new_from_db(row)
     end.first
 
-    def 
+    def self.find_or_create_by
     end
    end
 
