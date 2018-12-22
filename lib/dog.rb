@@ -41,6 +41,7 @@ class Dog
     new_dog = Dog.new
     new_dog.name = hash[0]
     new_dog.breed = hash[1]
+    new_dog
   end
 
 
