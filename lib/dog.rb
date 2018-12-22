@@ -37,11 +37,10 @@ class Dog
     return self
   end
 
-  def self.create(hash)
+  def self.create(dog_hash)
     new_dog = Dog.new
-    new_dog.name = hash[0]
-    new_dog.breed = hash[1]
-    new_dog
+    dog_hash.each do |key, value|
+      new_dog.send("#{key}=", value)
   end
 
 
