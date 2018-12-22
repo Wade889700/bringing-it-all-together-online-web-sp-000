@@ -42,7 +42,7 @@ class Dog
     dog_hash.each do |key, value|
       new_dog.send("#{key}=", value)
     end
-    new_dog
+    new_dog.save
   end
 
 
