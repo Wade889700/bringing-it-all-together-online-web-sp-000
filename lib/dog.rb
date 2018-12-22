@@ -41,6 +41,8 @@ class Dog
     new_dog = Dog.new
     dog_hash.each do |key, value|
       new_dog.send("#{key}=", value)
+    end
+    new_dog
   end
 
 
