@@ -50,8 +50,9 @@ class Dog
       SELECT * FROM dogs WHERE name = ?
     SQL
 
-    result = DB[:conn].execute(sql, self.name)
-    Dog.new(result[0], result[1], result[2])
+    DB[:conn].execute(sql, name).map do |row|
+       self.new_from_db(row)
+     end.frst
   end
 
 
