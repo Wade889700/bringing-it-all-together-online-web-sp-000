@@ -37,7 +37,7 @@ class Dog
     return self
   end
 
-  def self.create
+  def self.create(hash)
 
   end
 
